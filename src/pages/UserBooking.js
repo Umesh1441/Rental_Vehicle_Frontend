@@ -97,6 +97,7 @@ function UserBookings() {
                           src={booking.car.image}
                           height="140"
                           className="p-2"
+                          alt="error"
                         />
                       ) : (
                         <img
@@ -104,6 +105,7 @@ function UserBookings() {
                           src={defaultcar}
                           height="140"
                           className="p-2"
+                          alt="error"
                         />
                       )}
                     </Col>
@@ -179,6 +181,7 @@ function UserBookings() {
                             src={booking.car.image}
                             height="140"
                             className="p-2"
+                            alt="error"
                           />
                         ) : (
                           <img
@@ -186,6 +189,7 @@ function UserBookings() {
                             src={defaultcar}
                             height="140"
                             className="p-2"
+                            alt="error"
                           />
                         )}
                       </Col>

@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "antd/dist/antd.css";
 import { Route, BrowserRouter, Routes, Navigate } from "react-router-dom";
@@ -35,8 +34,8 @@ function App() {
               </ProtectedRoute>
             }
           ></Route>
-          <Route path="/login" exact element={<Login />}></Route>
-          <Route path="/register" exact element={<Register />}>
+          <Route path="/login" exact element={<Login/>}></Route>
+          <Route path="/register" exact element={<Register/>}>
             {" "}
           </Route>
           <Route

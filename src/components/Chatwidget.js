@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import chatbot from "../images/chatbot.png";
 import { Widget, addResponseMessage } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
+
 const Chatwidget = () => {
+  // Retrieve user from localStorage or set default username
   var user = JSON.parse(localStorage.getItem("user"));
   if (!user) {
     user = {
@@ -11,13 +13,14 @@ const Chatwidget = () => {
   }
 
   useEffect(() => {
+    // Display initial welcome message using user.username
     addResponseMessage(
-      `Welcome ${user.username}, I'm Sneha 🤖🖐️ a bot. How can i help you today?`
+      `Welcome ${user.username}, I'm Sneha 🤖🖐️ a bot. How can I help you today?`
     );
-  }, []);
+  }, [user.username]); // Ensure useEffect runs when user.username changes
+
   const handleNewUserMessage = (newMessage) => {
-    console.log(`New message incoming! ${newMessage}`);
-    // Now send the message throught the backend
+    // Handle incoming messages based on keywords
     if (
       newMessage.includes("hi") ||
       newMessage.includes("Hi") ||
@@ -28,19 +31,19 @@ const Chatwidget = () => {
       newMessage.includes("hey") ||
       newMessage.includes("Hey")
     ) {
-      addResponseMessage(`Hello ${user.username}, How I can help you?`);
+      addResponseMessage(`Hello ${user.username}, how can I help you?`);
     } else if (
       newMessage.includes("how are you") ||
       newMessage.includes("How are you")
     ) {
       addResponseMessage(`I'm fine. What about you?`);
     } else if (newMessage.includes("marry") || newMessage.includes("Marry")) {
-      addResponseMessage(`Sorry, I'm bot`);
+      addResponseMessage(`Sorry, I'm a bot`);
     } else if (
       newMessage.includes("your name") ||
       newMessage.includes("Your name")
     ) {
-      addResponseMessage(`I'm marvin`);
+      addResponseMessage(`I'm Marvin`);
     } else if (
       newMessage.includes("my name") ||
       newMessage.includes("My name")
@@ -68,7 +71,7 @@ const Chatwidget = () => {
       newMessage.includes("How to use")
     ) {
       addResponseMessage(
-        `Select any timeslot from the calender and we will provide you an information of available vehicles then you can simple book any of them by just clicking the book now button and paying the invoice 😄`
+        `Select any timeslot from the calendar and we will provide you information about available vehicles. You can book any of them by clicking the "Book Now" button and paying the invoice. 😄`
       );
     } else if (
       newMessage.includes("address") ||
@@ -77,27 +80,27 @@ const Chatwidget = () => {
       newMessage.includes("Location")
     ) {
       addResponseMessage(
-        `Our address is Shop Number 12, Rehman plaza, wahdat road Lahore.`
+        `Our address is Shop Number 12, Rehman Plaza, Wahdat Road, Lahore.`
       );
     } else if (
       newMessage.includes("how to book") ||
       newMessage.includes("How to book")
     ) {
       addResponseMessage(
-        `Select any timeslot from the calender and we will provide you an information of available vehicles then you can simple book any of them by just clicking the book now button and paying the invoice.`
+        `Select any timeslot from the calendar and we will provide you information about available vehicles. You can book any of them by clicking the "Book Now" button and paying the invoice.`
       );
     } else if (
       newMessage.includes("how to pay") ||
       newMessage.includes("How to pay")
     ) {
-      addResponseMessage(`We accept Payments from stripe only.`);
+      addResponseMessage(`We accept payments via Stripe only.`);
     } else if (newMessage.includes("free") || newMessage.includes("Free")) {
-      addResponseMessage(`Free word is unknown to me.`);
+      addResponseMessage(`The word "free" is unknown to me.`);
     } else if (
       newMessage.includes("discount") ||
       newMessage.includes("Discount")
     ) {
-      addResponseMessage(`Only owner can give discount.`);
+      addResponseMessage(`Only the owner can give discounts.`);
     } else if (
       newMessage.includes("payment") ||
       newMessage.includes("Payment")
@@ -110,18 +113,18 @@ const Chatwidget = () => {
       newMessage.includes("Phone")
     ) {
       addResponseMessage(
-        `You can send your number here or can directly contact the owner via +923310145083`
+        `You can send your number here or directly contact the owner via +923310145083`
       );
     } else if (newMessage.includes("hacker") || newMessage.includes("Hacker")) {
-      addResponseMessage(`Hahaha, Nice joke 😄`);
+      addResponseMessage(`Hahaha, nice joke 😄`);
     } else if (
       newMessage.includes("haha") ||
       newMessage.includes("hehehe") ||
       newMessage.includes("hahaha")
     ) {
-      addResponseMessage(`Hahaha, Nice joke 😄`);
+      addResponseMessage(`Hahaha, nice joke 😄`);
     } else if (newMessage.includes("hehe")) {
-      addResponseMessage(`Hehehe, Nice joke 😄`);
+      addResponseMessage(`Hehehe, nice joke 😄`);
     } else if (newMessage.includes("bye") || newMessage.includes("Bye")) {
       addResponseMessage(`Bye 😄`);
     } else if (newMessage.includes("Who made you?")) {
@@ -137,19 +140,20 @@ const Chatwidget = () => {
       addResponseMessage(`I'm Marvin & I'm a Bot 🤖`);
     } else {
       addResponseMessage(
-        `Sorry, I'm currently learning your language. I don't know the answer. Please contact on this number +91-8427040139.`
+        `Sorry, I'm currently learning your language. I don't know the answer. Please contact us at +91-8427040139 for assistance.`
       );
     }
   };
+
   return (
     <div>
       <Widget
         handleNewUserMessage={handleNewUserMessage}
         title="Chat with us!"
-        subtitle="We typically reply in few minutes."
+        subtitle="We typically reply in a few minutes."
         profileAvatar={chatbot}
-        // showCloseButton="true"
-        emojis="true"
+        showCloseButton={true} // Optionally, show close button
+        emojis={true} // Optionally, enable emojis
       />
     </div>
   );

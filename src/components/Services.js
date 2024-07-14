@@ -24,7 +24,7 @@ const Services = () => {
             <div class="col-md-4 col-sm-6 equal-height">
               <div class="item">
                 <i class="fas fa-pen-fancy">
-                  <img src={Fast_Booking} alt="" className="icon-image" />
+                  <img src={Fast_Booking} alt="error" className="icon-image" />
                 </i>
                 <h4>Fast & Easy Booking</h4>
                 <p>
@@ -36,7 +36,7 @@ const Services = () => {
             <div class="col-md-4 col-sm-6 equal-height">
               <div class="item">
                 <i class="fas fa-dharmachakra">
-                  <img src={Map} alt="" className="icon-image" />
+                  <img src={Map} alt="error" className="icon-image" />
                 </i>
                 <h4>Any Pickup Location</h4>
                 <p>
@@ -48,7 +48,7 @@ const Services = () => {
             <div class="col-md-4 col-sm-6 equal-height">
               <div class="item">
                 <i class="fas fa-tasks">
-                  <img src={Pay} alt="" className="icon-image" />
+                  <img src={Pay} alt="error" className="icon-image" />
                 </i>
                 <h4>No Booking Charges</h4>
                 <p>
@@ -60,7 +60,7 @@ const Services = () => {
             <div class="col-md-4 col-sm-6 equal-height">
               <div class="item">
                 <i class="fas fa-tachometer-alt">
-                  <img src={Collection} alt="" className="icon-image" />
+                  <img src={Collection} alt="error" className="icon-image" />
                 </i>
                 <h4>Free Maintenance</h4>
                 <p>
@@ -72,7 +72,7 @@ const Services = () => {
             <div class="col-md-4 col-sm-6 equal-height">
               <div class="item">
                 <i class="fas fa-recycle">
-                  <img src={Insurance} alt="" className="icon-image" />
+                  <img src={Insurance} alt="error" className="icon-image" />
                 </i>
                 <h4>Fully Insured</h4>
                 <p>
@@ -84,7 +84,7 @@ const Services = () => {
             <div class="col-md-4 col-sm-6 equal-height">
               <div class="item">
                 <i class="fas fa-headset">
-                  <img src={Support} alt="" className="icon-image" />
+                  <img src={Support} alt="error" className="icon-image" />
                 </i>
                 <h4>24/7 Support</h4>
                 <p>

@@ -61,7 +61,7 @@ function AdminHome() {
             return (
               <Col lg={5} sm={24} xs={24}>
                 <div className="car p-2 bs1 mb-2">
-                  <img src={car.image} className="carimg" />
+                  <img src={car.image} className="carimg" alt="error"/>
 
                   <div className="car-content d-flex align-items-center justify-content-between">
                     <div className="text-left pl-2">
