@@ -67,9 +67,7 @@ const Footer = () => {
                   </div>
                   <div className="footer-text">
                     <p>
-                      Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
-                      sed do eiusmod tempor incididuntut consec tetur
-                      adipisicing elit,Lorem ipsum dolor sit amet.
+                      Drive Your Dreams with Our Premium Car Rental Services. Experience the road like never before with our reliable, affordable, and luxurious vehicles. Your journey starts with us.
                     </p>
                   </div>
                   <div className="footer-social-icon">

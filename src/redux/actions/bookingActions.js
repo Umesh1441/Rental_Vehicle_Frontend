@@ -5,7 +5,7 @@ export const bookCar = (reqObj) => async (dispatch) => {
 
   try {
     await axios.post(
-      "http://localhost:8000/api/bookings/bookcar",
+      "https://digaliya-rental.onrender.com/api/bookings/bookcar",
       reqObj
     );
 
@@ -26,7 +26,7 @@ export const getAllBookings = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      "http://localhost:8000/api/bookings/getallbookings"
+      "https://digaliya-rental.onrender.com/api/bookings/getallbookings"
     );
     dispatch({ type: "GET_ALL_BOOKINGS", payload: response.data });
     dispatch({ type: "LOADING", payload: false });

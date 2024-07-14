@@ -28,8 +28,7 @@ const Services = () => {
                 </i>
                 <h4>Fast & Easy Booking</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                Fast & Easy Booking with Dhigaliya Cars: Reserve Your Ride in Minutes!
                 </p>
               </div>
             </div>
@@ -41,8 +40,7 @@ const Services = () => {
                 </i>
                 <h4>Any Pickup Location</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                Any Pickup Location with Dhigaliya Cars: Convenient and Flexible Rentals!
                 </p>
               </div>
             </div>
@@ -54,8 +52,7 @@ const Services = () => {
                 </i>
                 <h4>No Booking Charges</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                Zero Booking Charges: Enjoy Hassle-Free Rentals with Dhigaliya Cars!
                 </p>
               </div>
             </div>
@@ -67,8 +64,7 @@ const Services = () => {
                 </i>
                 <h4>Free Maintenance</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                Unlock the Road to Carefree Driving with Dhigaliya Cars!
                 </p>
               </div>
             </div>
@@ -80,8 +76,7 @@ const Services = () => {
                 </i>
                 <h4>Fully Insured</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                Fully Insured Vehicles, Ensuring Your Peace of Mind on Every Journey.
                 </p>
               </div>
             </div>
@@ -93,8 +88,7 @@ const Services = () => {
                 </i>
                 <h4>24/7 Support</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                24/7 Support for Your Car Rental Needs, Anytime, Anywhere.
                 </p>
               </div>
             </div>

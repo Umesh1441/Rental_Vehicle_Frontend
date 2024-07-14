@@ -6,7 +6,7 @@ export const getAllCars = () => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      "http://localhost:8000/api/cars/getallcars"
+      "https://digaliya-rental.onrender.com/api/cars/getallcars"
     );
     dispatch({ type: "GET_ALL_CARS", payload: response.data });
     dispatch({ type: "LOADING", payload: false });
@@ -21,7 +21,7 @@ export const addCar = (reqObj) => async (dispatch) => {
 
   try {
     await axios.post(
-      "http://localhost:8000/api/cars/addcar",
+      "https://digaliya-rental.onrender.com/api/cars/addcar",
       reqObj
     );
 
@@ -41,7 +41,7 @@ export const editCar = (reqObj) => async (dispatch) => {
 
   try {
     await axios.put(
-      "http://localhost:8000/api/cars/editcar",
+      "https://digaliya-rental.onrender.com/api/cars/editcar",
       reqObj
     );
 
@@ -61,7 +61,7 @@ export const deleteCar = (reqObj) => async (dispatch) => {
 
   try {
     await axios.post(
-      "http://localhost:8000/api/cars/deletecar",
+      "https://digaliya-rental.onrender.com/api/cars/deletecar",
       reqObj
     );
 
